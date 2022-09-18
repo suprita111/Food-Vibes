@@ -1,0 +1,75 @@
+*{
+    cursor: pointer;
+    box-sizing: border-box;
+}
+body{
+    background-color: cornsilk;
+    background-size: cover;
+    font-family: 'Noto Serif Jp',serif;
+}
+.wrap{
+    width: 800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.962)), url('../images/mainwall.webp'); 
+    background-size: cover;
+    padding: 10px;
+    border-radius: 25px;
+    margin: auto;
+    color:white;
+    top: 50%;
+    left: 50%;
+}
+input{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+input[type="radio"]{
+    color: tomato;
+}
+.wrap h2{
+    color: tomato;
+    text-align: center;
+    align-items: center;
+}
+.wrap h1{
+    color: tomato;
+    font-family: 'Great Vibes' ,cursive;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+}
+.rating{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.far {
+    color: tomato;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+input[type=submit]{
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 25px;
+
+}
+input[type=text]{
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 25px;
+}
+textarea{
+    display: block;
+    margin: 5px auto;
+    border-radius: 25px;
+}

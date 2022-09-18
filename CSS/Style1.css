@@ -1,0 +1,569 @@
+/*
+    Author : Suprita Murmu
+    Theme : Food Order Service
+    Version : 1.0
+*/
+/* CSS for all */
+
+* {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.wrapper {
+    padding: 5%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-content {
+    background-color: #f1f2f6;
+    padding: 10% 0;
+}
+
+
+.container{
+    /*border: 1px solid red;*/
+    width: 70%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+
+.img-responsive{
+    width:100%;
+}
+
+.img-curve{
+    border-radius:20px;
+}
+
+.text-right{
+    text-align :right;
+}
+
+
+.text-center{
+    text-align:center;
+}
+
+.text-left{
+    text-align :left ;
+}
+
+.text-white{
+    color:white;
+}
+
+.text-black {
+    color :black ;
+}
+.text-red{
+    color : red;
+}
+
+.clearfix{
+    clear:both;
+    float:none;
+}
+
+a {
+    color: #ff6b81;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #ff4757;
+    }
+
+
+.btn {
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 15px;
+}
+
+
+.btn-primary {
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+
+    btn-primary:hover {
+    background-color : #ff4757;
+}
+
+h2 {
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom :2%;
+}
+
+h3{
+    font-size:1.5rem;
+}
+
+.float-container{
+    position:relative;
+}
+
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+
+fieldset {
+    border :1px solid white;
+    margin: 5%;
+    padding:3%;
+    border-radius :5%;
+
+}
+
+.table-full {
+    width: 100%;
+}
+
+
+table tr th {
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+/* CSS for Navbar section */
+
+
+.navbar {
+    overflow: hidden;
+    background-color: white ;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+   /* border: 1px solid black;*/
+    padding: 1%;
+    width: 60px;
+    cursor: pointer;
+    float:left
+}
+
+.Menu{
+    line-height: 60px;
+}
+
+.Menu ul{
+    list-style-type: none;
+}
+
+.Menu ul li{
+    display: inline;
+    padding:1%;
+    font-weight:bold;
+    font-size:100%;
+}
+
+/* CSS for Toggle Menu */
+
+.username {
+    margin: auto;
+    font-family: 'Great Vibes', cursive;
+    padding: 4% 0;
+}
+
+
+#sidebar{
+    position :fixed ;
+    width :20%;
+    height:100%;
+    left :-20%;
+    background-color:black;
+}
+#sidebar  li {
+    color :white ;
+    font-size: 25px;
+    padding :20px;
+    border-bottom:1px solid gray;
+    text-align :center ;
+}
+
+.toggle-btn {
+    position: absolute;
+    left: 110%;
+    top: 15px;
+    cursor: pointer;
+}
+
+.toggle-btn span {
+    display:block ;
+    background-color:black ;
+    width :30px;
+    height :5px;
+    margin :3px;
+}
+
+#sidebar.active{
+    left :0;
+}
+
+
+/* CSS for food search section */
+.food-search {
+    background-image: url(../images/order1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 13% 0;
+    border-radius: 25px;
+}
+.food-wall {
+    background-image: url(../images/mainwall.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 13% 0;
+    border-radius: 25px;
+}
+
+
+.food-search input[type="search"] {
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+}
+
+
+/* CSS for categories */
+.Categories {
+    margin: auto;
+    font-family: 'Great Vibes', cursive;
+    padding: 4% 0;
+    
+}
+
+.box-3 {
+    /*border: 1px solid black;*/
+    width: 28%;
+    float: left;
+    margin: 2%;
+    cursor: pointer;
+    z-index :-1;
+}
+
+/* CSS for food varities section */
+
+.circ-3 {
+    border: 1px solid  black;
+    width: 28%;
+    float: left;
+    margin: 2%;
+    cursor: pointer;
+    z-index: -1;
+    clip-path :circle() ;
+}
+
+/*CSS for Explore*/
+.circ1-3 {
+    border: 1px solid black;
+    width: 29%;
+    float: left;
+    margin: 2%;
+    cursor: pointer;
+    z-index: -1;
+    clip-path: circle();
+}
+
+
+/* CSS for Food Menu */
+
+.food-menu {
+    font-family: 'Great Vibes', cursive;
+    background-color: #ececec;
+    padding: 4% 0;
+}
+
+.food-menu-box{
+    border: 1px solid black;
+    width:35%;
+    margin:2%;
+    padding:2%;
+    float:left ;
+    background-color : white;
+    border-radius :15px;
+    overflow : hidden;
+
+}
+
+
+.food-menu-img{
+    width :20%;
+    float: left ;
+}
+
+
+.food-menu-desc{
+    width :70%;
+    float :left;
+    margin-left :8%;
+    
+}
+
+.food-price{
+    font-size:1.2rem;
+    margin:2% 2%;
+}
+
+.food-detail {
+    font-size: 1rem;
+    color: #747d8c ;
+}
+
+/* CSS for social */
+
+.Social-Media ul {
+    list-style-type: none;
+}
+
+
+    .Social-Media ul li {
+        display: inline;
+        padding: 1%;
+    }
+
+
+/* CSS for Order Section */
+
+.order{
+    padding:7% 0;
+    width :50%;
+    margin :0 auto;
+}
+
+.input-responsive{
+    width :96%;
+    padding :1%;
+    margin-bottom :3%;
+    border :none;
+    border-radius:5px;
+    font-size:1rem;
+}
+
+order-label{
+    margin-bottom :1%;
+    font-weight :bolder 600;
+}
+
+.food-order {
+    background-image: url(../images/mainwall.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 10% 0;
+    border-radius: 25px;
+}
+/* CSS for mobile size or smaller screen */
+@media only screen and (max-width:768px) {
+    .logo {
+        width :80%;
+        float :none ;
+        margin :1%  auto ;
+    }
+
+    .Menu ul {
+        text-align :center ;
+    }
+
+    .food-search input[type="search"]{
+        width :90%;
+        padding :2%;
+        margin-bottom:3%;
+    }
+
+    .btn {
+        width:91%;
+        padding :2%;
+    }
+
+    .food-search {
+        padding :10% 0;
+    }
+
+    .Categories {
+        padding :20% 0;
+    }
+
+    h2{
+        margin-bottom :10%;
+    }
+
+    .box-3 {
+        width :90%;
+        margin :4% auto;
+    }
+
+    .food-menu {
+        padding:20% 0;
+    }
+
+    .food-menu-box {
+        width:90%;
+        padding :5%;
+        margin-bottom :5%;
+    }
+
+    .Social-Media {
+        padding:5% 0;
+    }
+
+    .order {
+        width :100%;
+    }
+}
+
+
+/* CSS for background of order , category-foods , food-search page 
+
+.food-order {
+    background-image: url(../images/momo.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 7% 0;
+    border-radius: 25px;
+}*/
+
+/*.food-menubackground {
+    background-image: url(../images/cat-cuisine.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 7% 0;
+    border-radius: 25px;
+}*/
+
+
+.food-categoryfoods {
+    background-image: url(../images/pasta.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 7% 0;
+    border-radius: 25px;
+}
+
+/* CSS for resturant section */
+
+.Resturant {
+    font-family: 'Great Vibes', cursive;
+    background-color: #ececec;
+    padding: 4% 0;
+}
+
+.Resturant-box {
+    border: 1px solid black;
+    width: 35%;
+    margin: 2%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.Resturant-desc {
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+/*  CSS for the user detail section  */
+
+
+/*.circ2-3 {
+    border: 1px solid black;
+    width: 20%;
+    position:center;
+    margin: 2%;
+    cursor: pointer;
+    z-index: -1;
+    clip-path: circle();
+}*/
+
+.user-detail {
+    margin: auto;
+    font-family: 'Great Vibes', cursive;
+    padding: 10% 0;
+    background-color: #ececec;
+}
+
+
+.user-detail-box {
+   
+    border: 2px solid black;
+    width: 20%;
+    position: center;
+    margin: 2%;
+    cursor: pointer;
+    z-index: -1;
+    clip-path: circle();
+}
+
+
+
+/*CSS for  contact us */
+
+.blank {
+    margin: 0 0;
+    font-family: 'Great Vibes', cursive;
+    padding: 4% 10%;
+    background-color:aqua ;
+}
+
+
+.contact {
+    margin: auto;
+    font-family: 'Great Vibes', cursive;
+    padding: 10% 0;
+    background-color: #ececec;
+}
+
+
+.contact-form {
+    margin: auto;
+    font-family: 'Great Vibes', cursive;
+    padding: 4% 0;
+    background-color: #ececec;
+    position:fixed ;
+}
+
+.contact-box {
+    width: 500px;
+    background-color: #fff;
+    padding: 7% 0;
+    box-shadow: 0 0 20px 0 #999;
+    top: 50%;
+    left: 50%;
+    z-index: auto;
+    transform: translate(-50%, -50%);
+    position: sticky;
+}
+form {
+    margin : 35px;
+}
+
+.input-field{
+    width : 400px;
+    height : 40px;
+    margin-top : 20px;
+    padding-left : 10px;
+    border : 1px solid #777;
+    border-radius : 14px;
+    outline : none;
+
+}
+
+.textarea-field{
+    height : 150px;
+    padding-top :10px;
+}
+
